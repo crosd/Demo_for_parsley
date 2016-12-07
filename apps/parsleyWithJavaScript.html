@@ -1,0 +1,42 @@
+<html>
+<head>
+	
+	
+	 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="parsley.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+  <div class="row">
+		<div class="span6 offset3">
+<form  id="form">
+  Name:<br>
+  <input type="text" name="firstname" data-parsley-required="true"/ >
+  <br>
+  Email:<br>
+  <input type="text" name="lastname" data-parsley-required="true" data-parsley-type="email" />
+  <br>
+  phone:<br>
+  <input type="text" name="phone" data-parsley-required="true" data-parsley-type="number" />
+  <br>Password:
+  <br>
+  <input type ="password" name ="password" data-parsley-required="true"/>
+  <br><br>
+  <br>
+  
+  <input type="submit" value="Submit" class="btn btn-success"/>
+
+</form>
+</div>
+</div>
+</div>
+<script type="text/javascript">
+$('#form').parsley({});
+</script>
+</body>
+
+
+</html>
